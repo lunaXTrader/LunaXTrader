@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunaXTrader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>LunaXTrader</h1>
+            </div>
+            <div class="social-media">
+                <a href="https://www.youtube.com/@LunaXTrader" target="_blank" class="social-icon youtube">
+                    <img src="assets/youtube-icon.png" alt="YouTube">
+                </a>
+                <a href="https://www.instagram.com/lunaxtrader?igsh=MmtlemQ5NGo1cTNp" target="_blank" class="social-icon instagram">
+                    <img src="assets/instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/YourProfile" target="_blank" class="social-icon twitter">
+                    <img src="assets/twitter-icon.png" alt="X">
+                </a>
+                <a href="https://www.snapchat.com/add/lunaxtrader?share_id=vKR8F0WBSpk&locale=en-US" target="_blank" class="social-icon snapchat">
+                    <img src="assets/snapchat-icon.png" alt="Snapchat">
+                </a>
+                <a href="https://www.threads.net/@lunaxtrader" target="_blank" class="social-icon threads">
+                    <img src="assets/threads-icon.png" alt="threads">
+                </a>
+            </div>
+        </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#videos">Videos</a></li> 
+                <li><a href="#photos">Gallery</a></li> 
+                <li><a href="#contact">Contact</a></li>
+                <!-- Added Video link -->
+                <!-- Added Gallery link -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to LunaXTrader</h1>
+            <p>One Stop Solution for your trading.</p>
+            <a href="#about" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to LunaXTrader, your destination for insightful commentary on market trends aimed at fostering financial education and awareness. Our intention is to provide valuable observations to help our audience navigate the complexities of the securities market; however, we do not advocate for the purchase or sale of any securities or investment products.
+
+                Please note that investments and trading carry inherent risks, and we urge you to review all relevant documentation carefully before proceeding. It is essential to understand that we are not registered advisors with SEBI, and neither the owners nor employees of LunaXTrader will be held liable for any gains or losses incurred. Any legal claims in this regard will be deemed void.
+                
+                We encourage you to conduct your own analysis and consult with a qualified financial advisor before making any investment decisions.
+                
+                Thank you for your support as we embark on this enlightening journey through the world of finance, sharing valuable insights for wealth-building and financial literacy. Join us as we unlock the secrets to successful trading together.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Video Tutorials</h3>
+                    <p>In-depth video tutorials on stock trading and financial markets.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Blog Posts</h3>
+                    <p>Expert-written blogs to keep you informed on market trends and tips.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Market Analysis</h3>
+                    <p>Real-time analysis of the stock market, with reports and insights.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Website Creation</h3>
+                    <p>As per your needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="videos" class="section">
+        <div class="container">
+            <h2>Motivation Video</h2>
+            <div class="gallery-wrapper">
+                <button class="prev-btn" onclick="scrollVideos(-1)">&#10094;</button>
+                <div class="video-gallery">
+                    <div class="video-wrapper"><video src="assets/video 1.mp4" controls></video></div>
+                    <div class="video-wrapper"><video src="assets/video 2.mp4" controls></video></div>
+                    <div class="video-wrapper"><video src="assets/video 3.mp4" controls></video></div>
+                    <div class="video-wrapper"><video src="assets/video 4.mp4" controls></video></div>
+                    <div class="video-wrapper"><video src="assets/video 5.mp4" controls></video></div>
+                    <div class="video-wrapper"><video src="assets/video 6.mp4" controls></video></div>
+                </div>
+                <button class="next-btn" onclick="scrollVideos(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+<section id="photos" class="section">
+    <div class="container">
+        <h2>Trading Photos</h2>
+        <div class="photo-gallery-wrapper">
+            <button class="photo-prev-btn">&#10094;</button> <!-- Left arrow -->
+            <div class="photo-gallery">
+                <div class="gallery-wrapper">
+                    <div class="gallery-item"><img src="assets/hero-image.jpeg" alt="Photo 1"></div>
+                    <div class="gallery-item"><img src="assets/image1.jpg" alt="Photo 2"></div>
+                    <div class="gallery-item"><img src="assets/hero-image.jpeg" alt="Photo 3"></div>
+                    <div class="gallery-item hidden"><img src="assets/twitter-icon.png" alt="Photo 4"></div>
+                    <div class="gallery-item hidden"><img src="assets/check 1.jpeg" alt="Photo 5"></div>
+                    <div class="gallery-item hidden"><img src="assets/snapchat-icon.png" alt="Photo 6"></div>
+                </div>
+            </div>
+            <button class="photo-next-btn">&#10095;</button> <!-- Right arrow -->
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="Lightbox Image" />
+        <a class="prev" id="prev">&lt;</a>
+        <a class="next" id="next">&gt;</a>
+    </div>
+</div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us.</p>
+        </div>
+    </div>
+    <div class="social-media">
+        <a href="https://www.youtube.com/@LunaXTrader" target="_blank" class="social-icon youtube">
+            <img src="assets/youtube-icon.png" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com/lunaxtrader?igsh=MmtlemQ5NGo1cTNp" target="_blank" class="social-icon instagram">
+            <img src="assets/instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/YourProfile" target="_blank" class="social-icon twitter">
+            <img src="assets/twitter-icon.png" alt="X">
+        </a>
+        <a href="https://www.snapchat.com/add/lunaxtrader?share_id=vKR8F0WBSpk&locale=en-US" target="_blank" class="social-icon snapchat">
+            <img src="assets/snapchat-icon.png" alt="Snapchat">
+        </a>
+        <a href="https://www.threads.net/@lunaxtrader" target="_blank" class="social-icon threads">
+            <img src="assets/threads-icon.png" alt="threads">
+        </a>
+    </div>
+</div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 LunaXTrader. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("showMoreBtn").addEventListener("click", function() {
+            // Select all hidden video wrappers
+            const hiddenVideos = document.querySelectorAll(".video-wrapper.hidden");
+            
+            // Show each hidden video
+            hiddenVideos.forEach(video => {
+                video.classList.remove("hidden");
+            });
+    
+            // Hide the button after showing all videos
+            this.style.display = "none";
+        });
+    </script>
+    
+    <script src="script.js"></script>
+    <div class="ads-container">
+        <!-- Google AdSense code goes here -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXX"  <!-- Your ad client ID -->
+             data-ad-slot="XXXXXXXXX"            <!-- Your ad slot ID -->
+             data-ad-format="auto"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    

@@ -1,0 +1,761 @@
+/* Header Navigation */
+header {
+    background: linear-gradient(to right, #0F2027, #21642c, #01b3ff); /* Modern gradient background */
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px; /* Increased padding for better spacing */
+}
+
+header .logo h1 {
+    font-size: 36px; /* Larger font size */
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;  /* Use a clean modern font */
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* Stronger text shadow for depth */
+    letter-spacing: 2px; /* Adds spacing between letters for a modern look */
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header .nav-links li {
+    margin-left: 35px;
+}
+
+header .nav-links li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header .nav-links li a:hover {
+    background-color: #d4c526;
+    color: rgb(21, 20, 20);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(19, 138, 165, 0.6); /* Enhanced hover shadow */
+}
+header .nav-links li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+    perspective: 500px; /* Add perspective for 3D effect */
+}
+
+header .nav-links li a:hover {
+    background-color: #d4c526;
+    color: rgb(21, 20, 20);
+    transform: scale(1.1) rotateX(10deg); /* Scale and tilt slightly for 3D pop effect */
+    box-shadow: 0 6px 20px rgba(19, 138, 165, 0.6); /* Enhanced hover shadow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 
+                 2px 2px 4px rgba(0, 0, 0, 0.3); /* 3D text shadow effect */
+}
+
+/* Optional: Add a focus or "selected" state for when the link is active */
+header .nav-links li a:active {
+    transform: scale(1.15) rotateX(10deg); /* Increase 3D pop for active state */
+    background-color: #f2da4a;
+}
+
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    header .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    header .nav-links li {
+        margin: 10px 0;
+    }
+
+    header .nav-links li a {
+        font-size: 20px;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/LunaXTrader_1728126856057.jpeg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(169, 220, 248);
+}
+
+.hero .hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(242, 242, 242); /* Added color to improve readability */
+}
+
+.hero .hero-content p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: rgb(245, 245, 245); /* Added color for better contrast */
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #00ffea;
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Add transition for transform and box-shadow */
+    perspective: 500px; /* Add perspective for 3D effect */
+}
+
+.btn:hover {
+    background-color: #007acc;
+    transform: translateY(-5px) scale(1.05) rotateX(3deg); /* Move up and slightly scale */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), /* Add shadow below */
+                0 6px 10px rgba(0, 0, 0, 0.15); /* Lighter shadow */
+}
+
+/* Optional: Active state for when the button is clicked */
+.btn:active {
+    transform: translateY(1px) scale(1); /* Pressed effect */
+    box-shadow: none; /* Remove shadow to simulate pressing */
+}
+
+/* Section Styles */
+.section {
+    background-color: hwb(0 100% 0%);
+    border: 5px solid transparent; /* Create a transparent border to avoid shifting layout */
+    border-radius: 10px; /* Optional: round the corners */
+    animation: fade 4s infinite; /* Animation name and duration */
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+}
+
+/* Keyframes for the fading effect */
+@keyframes fade {
+    0% {
+        background-color: rgb(237, 237, 237); /* Starting color */
+    }
+    50% {
+        background-color: rgb(240, 247, 202); /* Color at the midpoint */
+    }
+    100% {
+        background-color: rgb(238, 244, 201); /* Back to starting color */
+    }
+}
+
+
+.section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Added color for better readability */
+}
+
+.section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #93d8eb;
+    padding: 20px;
+    width: calc(33.333% - 20px); /* Adjusted width for better spacing */
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+.service-item:hover {
+    transform: translateY(-10px); /* Lifts the card up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increases the shadow depth */
+    background-color: #81c2d6; /* Slightly darkens the background */
+}
+.service-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #020202; /* Match the branding color */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #479f76;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact .btn {
+    background-color: #00aaff;
+}
+
+footer {
+    background-color: #00ddff;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Add responsive design for service items */
+@media (max-width: 768px) {
+    .service-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Video Section */
+.video-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-wrapper {
+    width: calc(33.333% - 20px); /* Adjusted width for better spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Responsive Design for Video Section */
+@media (max-width: 768px) {
+    .video-wrapper {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+/* Hide additional videos by default */
+.hidden {
+    display: none;
+}
+
+/* Photo Gallery Section */
+.photo-gallery {
+    display: flex;
+    transition: transform 0.4s ease-in-out; /* Smooth transition for scrolling */
+    width: 100%; /* Set the width of the gallery */
+    overflow: hidden; /* Hide overflowing items */
+}
+
+.gallery-wrapper {
+    display: flex;
+    transition: transform 0.3s ease; /* Smooth transition for scrolling */
+}
+
+.gallery-item {
+    flex: 0 0 calc(33.333% - 20px); /* Show three images at a time */
+    margin: 0 10px; /* Space between items */
+    border-radius: 8px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+}
+
+.gallery-item img {
+    width: 100%; /* Make the image responsive */
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
+/* Arrow button styles */
+.photo-prev-btn, .photo-next-btn {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.photo-prev-btn {
+    left: 50px; /* Position the left arrow */
+}
+
+.photo-next-btn {
+    right: 50px; /* Position the right arrow */
+}
+
+/* Responsive Design for the gallery */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 0 0 calc(50% - 20px); /* Two items on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 0 0 100%; /* One item on very small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 0 0 100%; /* One item on very small screens */
+    }
+}
+
+/* Arrow button styles */
+.photo-prev-btn, .photo-next-btn {
+    background-color: #00aaff;
+    color: rgb(1, 172, 229);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.photo-prev-btn {
+    left: 20px; /* Position the left arrow */
+}
+
+.photo-next-btn {
+    right: 20px; /* Position the right arrow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 20px); /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%; /* One column on very small screens */
+    }
+}
+/* General Gallery Styles */
+.gallery-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.video-gallery, .photo-gallery {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.gallery-item, .video-wrapper {
+    flex: 0 0 calc(33.333% - 20px); /* Three items in a row */
+    margin: 0 10px;
+}
+
+/* Navigation Button Styles */
+.prev-btn, .next-btn {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev-btn {
+    left: -40px; /* Move to the left of the gallery */
+}
+
+.next-btn {
+    right: -40px; /* Move to the right of the gallery */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .gallery-item, .video-wrapper {
+        flex: 0 0 calc(50% - 20px); /* Two items in a row */
+    }
+
+    .prev-btn, .next-btn {
+        left: -20px;
+        right: -20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item, .video-wrapper {
+        flex: 0 0 100%; /* One item in a row */
+    }
+}
+.photo-gallery-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.photo-gallery {
+    display: flex;
+    overflow: hidden; /* Hides the images that are outside of the visible area */
+    width: 80%; /* Adjust width to match your design */
+}
+
+.gallery-item {
+    width: calc(33.333% - 20px); /* Show three images at a time */
+    margin-right: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.arrow {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.arrow:hover {
+    background-color: #007acc;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 20px); /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%; /* One column on very small screens */
+    }
+}
+.photo-gallery {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+.photo-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Hide overflowing items */
+    width: 100%; /* Set the width of the gallery */
+}
+
+.gallery-wrapper {
+    display: flex;
+    transition: transform 0.3s ease; /* Smooth transition for scrolling */
+}
+
+.gallery-item {
+    flex: 0 0 calc(33.333% - 20px); /* 3 items per row with gap */
+    margin: 0 10px; /* Space between items */
+}
+
+.gallery-item img {
+    width: 100%; /* Make the image responsive */
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
+/* Arrow button styles */
+.photo-prev-btn, .photo-next-btn {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.photo-prev-btn {
+    left: 10px; /* Position the left arrow */
+}
+
+.photo-next-btn {
+    right: 10px; /* Position the right arrow */
+}
+
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    flex: 0 0 calc(33.333% - 20px); /* Show three images at a time */
+    margin-bottom: 20px; /* Space below items */
+}
+
+.gallery-item img {
+    width: 100%; /* Make images responsive */
+    border-radius: 8px; /* Optional: add rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.2s; /* Add a slight zoom on hover */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+}
+
+.lightbox-content {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.lightbox-content img {
+    max-width: 90%;
+    max-height: 80vh; /* Limit height */
+    border-radius: 8px;
+}
+
+.close, .prev, .next {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.close {
+    top: 10px;
+    right: 20px;
+}
+
+.prev {
+    left: 10px; /* Position left arrow */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next {
+    right: 10px; /* Position right arrow */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Responsive Design for the gallery */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 0 0 calc(50% - 20px); /* Two items on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 0 0 100%; /* One item on very small screens */
+    }
+}
+.photo-gallery-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Adjust width as needed */
+}
+
+.photo-gallery {
+    display: flex;
+    transition: transform 0.3s ease; /* Smooth transition for scrolling */
+}
+
+.gallery-item {
+    flex: 0 0 calc(33.333% - 20px); /* 3 items per row */
+    margin-right: 10px; /* Space between items */
+}
+
+.gallery-item img {
+    width: 100%; /* Make the image responsive */
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.photo-prev-btn, .photo-next-btn {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.photo-prev-btn {
+    left: 10px; /* Position the left arrow */
+}
+
+.photo-next-btn {
+    right: 10px; /* Position the right arrow */
+}
+.hidden {
+    display: none;
+}
+
+/* Add other styles for your gallery, lightbox, and buttons as needed */
+/* Style for the header with title and social icons */
+.header {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: #0e2a38; /* Optional, adjust for header background */
+}
+
+.website-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px; /* Space between title and icons */
+}
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    gap: 20px; /* Space between icons */
+}
+
+.social-icon img {
+    width: 40px; /* Size of the icons */
+    height: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow effect on hover */
+}
+
+/* Click effect on social icons */
+.social-icon img:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease;
+}
+/* Style for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1f2e3e;
+}
+
+/* Style for the logo */
+.logo h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Add margin between the logo and social media icons */
+.social-media {
+    display: flex;
+    gap: 20px; /* Adds space between icons */
+}
+
+/* Add margin between the logo and the social media section */
+header .logo {
+    margin-right: 50px; /* Adjust this value for more or less space */
+}
+
+/* Style for the social icons */
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+h2 {
+    font-size: 2rem; /* Adjust font size as needed */
+    text-align: center; /* Center the heading */
+    color: #333; /* Text color */
+    position: relative; /* Positioning for the pseudo-element */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    padding: 10px; /* Padding to give space for the background */
+    border-radius: 5px; /* Optional: round the corners */
+}
+
+h2:hover {
+    transform: scale(1.05) translateY(-3px); /* Scale up and move up slightly */
+    background-color: rgba(244, 240, 6, 0.7); /* Light background color */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), /* Add shadow below */
+                0 6px 10px rgba(0, 0, 0, 0.15); /* Lighter shadow */
+}
